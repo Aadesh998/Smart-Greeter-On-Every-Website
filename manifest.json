@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "AI Greeter",
+    "description": "Greets you on new tabs with good vibes!",
+    "version": "1.1",
+    "permissions": [],
+    "host_permissions": ["https://api.groq.com/"],
+    "content_scripts": [
+      {
+        "matches": ["https://*/*"],
+        "js": ["content.js"],
+        "css": ["style.css"]
+      }
+    ],
+    "action": {
+      "default_title": "AI Greeter"
+    },
+    "icons": {
+        "16": "icon.png"
+    }
+  }
+  
